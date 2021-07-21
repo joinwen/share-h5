@@ -35,5 +35,22 @@ const constantRoutes = [
       },
     ],
   },
+  {
+    path: "/school",
+    redirect: "/school/style",
+    component: Main,
+    children: [
+      {
+        path: "/school/style",
+        name: "SchoolStyle",
+        component: () =>
+          import("@/views/school/src/schoolStyle/schoolStyle.vue"),
+        meta: {
+          title: "回忆校园",
+          isLogin: false,
+        },
+      },
+    ],
+  },
 ];
 export { constantRoutes };
