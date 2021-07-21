@@ -60,6 +60,7 @@
               <span class="step-number">2</span>
               <div class="step-content">
                 <span> STEP2：简单分享赚大钱 </span>
+                <span> STEP2：简单分享赚大钱 </span>
                 <span>
                   获取资格后，您可以挑选平台中任意产品直接分享，不同的产品，佣金不同，可以根据您自己的需求分享。
                 </span>
@@ -133,8 +134,8 @@ export default {
 </script>
 <style lang="less" scoped>
 p {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 .red-font {
   color: #ff2b2b;
@@ -223,7 +224,6 @@ p {
       background-color: #fff;
       position: relative;
       padding: 1.14rem 0.3rem 0.44rem;
-
       .fixed-notice {
         position: absolute;
         left: 0;
