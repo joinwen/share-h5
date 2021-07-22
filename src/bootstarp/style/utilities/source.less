@@ -1,0 +1,107 @@
+/**
+  utilities 源码
+ */
+// 盒模型
+@box-values: range(0, 10, 1);
+each(@box-values, {
+  .m-t-@{value} {
+    margin-top: unit(@value, px)
+  }
+  .m-b-@{value} {
+    margin-bottom: unit(@value, px)
+  }
+  .m-l-@{value} {
+    margin-left: unit(@value, px)
+  }
+  .m-r-@{value} {
+    margin-right: unit(@value, px)
+  }
+  .m-x-@{value} {
+    margin-left: unit(@value, px);
+    margin-right: unit(@value,px)
+  }
+  .m-y-@{value} {
+    margin-top: unit(@value, px);
+    margin-bottom: unit(@value, px)
+  }
+  .m-@{value} {
+    margin: unit(@value, px);
+  }
+  .p-t-@{value} {
+    padding-top: unit(@value, px);
+  }
+  .p-b-@{value} {
+    padding-bottom: unit(@value, px);
+  }
+  .p-l-@{value} {
+    padding-left: unit(@value, px);
+  }
+  .p-r-@{value} {
+    padding-right: unit(@value, px);
+  }
+  .p-x-@{value} {
+    padding-left: unit(@value, px);
+    padding-right: unit(@value, px);
+  }
+  .p-y-@{value} {
+    padding-top: unit(@value, px);
+    padding-bottom: unit(@value, px);
+  }
+  .p-@{value} {
+    padding: unit(@value, px);
+  }
+  .w-@{value} {
+    width: unit(@value, px);
+  }
+  .w-100\% {
+    width: 100%;
+  }
+  .h-@{value}{
+    height: unit(@value, px);
+  }
+  .h-100\% {
+    height: 100%;
+  }
+})
+.m-x-auto {
+  margin: 0 auto;
+}
+// display
+@display-values: block inline inline-block flex inline-flex;
+each(@display-values, {
+  .@{value} {
+    display: @value;
+  }
+})
+
+// text-align
+@text-align-values: left right center justify end start;
+each(@text-align-values, {
+  .text-@{value} {
+    text-align: @value;
+  }
+})
+
+// flex-align
+@flex-align-values: start end center baseline stretch;
+each(@flex-align-values, {
+  .flex-align-@{value} {
+    align-items: @value;
+  }
+})
+
+// flex-justify
+@flex-justify-values: start end left right center space-between space-around space-evenly stretch;
+each(@flex-justify-values, {
+  .flex-justify-@{value} {
+    justify-content: @value;
+  }
+})
+
+// font-weight
+@weight-values: range(100,800,100);
+each(@weight-values, {
+  .weight-@{value} {
+    font-weight: @value;
+  }
+})

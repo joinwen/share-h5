@@ -3,6 +3,7 @@ const constantRoutes = [
   {
     path: "/",
     name: "Root",
+    title: "索引",
     component: () => import("@/views/index/Index"),
   },
   {
@@ -10,6 +11,7 @@ const constantRoutes = [
     name: "OddSpread",
     redirect: "/odd-spread/index",
     component: Main,
+    title: "推广",
     children: [
       {
         path: "/odd-spread/index",
@@ -38,6 +40,8 @@ const constantRoutes = [
   {
     path: "/school",
     redirect: "/school/style",
+    name: "School",
+    title: "校园",
     component: Main,
     children: [
       {
@@ -47,6 +51,60 @@ const constantRoutes = [
           import("@/views/school/src/schoolStyle/schoolStyle.vue"),
         meta: {
           title: "回忆校园",
+          isLogin: false,
+        },
+      },
+    ],
+  },
+  {
+    path: "/air-fly",
+    redirect: "/air-fly/home",
+    name: "AirFly",
+    title: "AirFly",
+    component: Main,
+    children: [
+      {
+        path: "/air-fly/home",
+        name: "AirFlyHome",
+        component: () => import("@/views/air-fly/src/home/Home.vue"),
+        meta: {
+          title: "首页",
+          isLogin: false,
+        },
+      },
+      {
+        path: "/air-fly/profile",
+        name: "AriFlyProfile",
+        component: () => import("@/views/air-fly/src/profile/Profile.vue"),
+        meta: {
+          title: "介绍",
+          isLogin: false,
+        },
+      },
+    ],
+  },
+  {
+    path: "/coffee",
+    redirect: "/coffee/home",
+    name: "Coffee",
+    title: "咖啡",
+    component: Main,
+    children: [
+      {
+        path: "/coffee/home",
+        name: "CoffeeHome",
+        component: () => import("@/views/coffee/src/home/Home.vue"),
+        meta: {
+          title: "首页",
+          isLogin: false,
+        },
+      },
+      {
+        path: "/coffee/profile",
+        name: "CoffeeProfile",
+        component: () => import("@/views/coffee/src/order/Order.vue"),
+        meta: {
+          title: "介绍",
           isLogin: false,
         },
       },

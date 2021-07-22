@@ -15,10 +15,14 @@ import {
   Popup,
   Toast,
   Checkbox,
-  Calendar,
   DatetimePicker,
   Tab,
   Tabs,
+  Grid,
+  GridItem,
+  Divider,
+  Swipe,
+  SwipeItem,
 } from "vant";
 Vue.use(Form);
 Vue.use(Field);
@@ -35,7 +39,11 @@ Vue.use(Row);
 Vue.use(Popup);
 Vue.use(Toast);
 Vue.use(Checkbox);
-Vue.use(Calendar);
 Vue.use(DatetimePicker);
 Vue.use(Tab);
 Vue.use(Tabs);
+Vue.use(Grid);
+Vue.use(GridItem);
+Vue.use(Divider);
+Vue.use(Swipe);
+Vue.use(SwipeItem);

@@ -109,8 +109,8 @@
           </div>
           <div class="footer-assurance">
             <p class="footer-assurance-text">
-              风险百陌承担！您放心赚钱！ 除了百陌，还有谁！！<br />
-              想赚钱？找百陌就对了！！
+              风险我们承担！您放心赚钱！ 除了我们，还有谁！！<br />
+              想赚钱？找我们就对了！！
             </p>
             <div>
               <img

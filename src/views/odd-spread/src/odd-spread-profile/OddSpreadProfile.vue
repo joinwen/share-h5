@@ -5,8 +5,7 @@
       <h2 class="content-title">我们是一个什么样的平台？</h2>
       <div class="content-article">
         <p>
-          百陌零工是一个集<span class="red-font"
-            >教育课程、医疗美容、金融服务</span
+          XXXX是一个集<span class="red-font">教育课程、医疗美容、金融服务</span
           >等多品类的平台，所有合作的产品均为各行业内部数一数二的
           <span class="red-font">龙头企业，任务齐全！官方认证！资质齐全！</span>
           <span class="red-font-lg">

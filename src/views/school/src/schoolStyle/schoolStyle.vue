@@ -61,7 +61,7 @@
     <div class="ewm">
       <img src="@/assets/images/school/ewm.png" alt="照片" />
     </div>
-    <p class="ewm-1">扫码下载百陌APP</p>
+    <p class="ewm-1">扫码下载APP</p>
     <p class="ewm-2">回忆校园 留念是如此深沉</p>
     <img class="school-img15" src="@/assets/images/school/bg_bot.png" alt="" />
   </div>
