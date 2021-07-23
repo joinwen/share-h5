@@ -110,5 +110,60 @@ const constantRoutes = [
       },
     ],
   },
+  {
+    path: "/bank-me",
+    redirect: "/bank-me/home",
+    name: "BankMe",
+    title: "BankMe",
+    component: Main,
+    children: [
+      {
+        path: "/bank-me/home",
+        name: "BankMeHome",
+        component: () => import("@/views/bank-me/src/home/Home.vue"),
+        meta: {
+          title: "首页",
+          isLogin: false,
+        },
+      },
+      {
+        path: "/bank-me/introduction",
+        name: "BankMeIntroduction",
+        component: () =>
+          import("@/views/bank-me/src/introduction/Introduction.vue"),
+        meta: {
+          title: "介绍",
+          isLogin: false,
+        },
+      },
+      {
+        path: "/bank-me/privacy",
+        name: "BankMePrivacy",
+        component: () => import("@/views/bank-me/src/privacy/Privacy.vue"),
+        meta: {
+          title: "隐私通知",
+          isLogin: false,
+        },
+      },
+      {
+        path: "/bank-me/login",
+        name: "BankMePrivacy",
+        component: () => import("@/views/bank-me/src/login/Login.vue"),
+        meta: {
+          title: "登录",
+          isLogin: false,
+        },
+      },
+      {
+        path: "/bank-me/register",
+        name: "BankMePrivacy",
+        component: () => import("@/views/bank-me/src/register/Register.vue"),
+        meta: {
+          title: "注册",
+          isLogin: false,
+        },
+      },
+    ],
+  },
 ];
 export { constantRoutes };
