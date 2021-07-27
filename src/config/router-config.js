@@ -4,7 +4,8 @@ const constantRoutes = [
     path: "/",
     name: "Root",
     title: "索引",
-    component: () => import("@/views/index/Index"),
+    component: () =>
+      import(/* webpackChunkName: "index" */ "@/views/index/Index"),
   },
   {
     path: "/odd-spread",
@@ -17,7 +18,9 @@ const constantRoutes = [
         path: "/odd-spread/index",
         name: "OddSpreadIndex",
         component: () =>
-          import("@/views/odd-spread/src/odd-spread-index/OddSpreadIndex.vue"),
+          import(
+            /* webpackChunkName: "odd-spread" */ "@/views/odd-spread/src/odd-spread-index/OddSpreadIndex.vue"
+          ),
         meta: {
           title: "轻轻松松赚大钱",
           isLogin: false,
@@ -28,7 +31,7 @@ const constantRoutes = [
         name: "OddProfile",
         component: () =>
           import(
-            "@/views/odd-spread/src/odd-spread-profile/OddSpreadProfile.vue"
+            /* webpackChunkName: "odd-spread" */ "@/views/odd-spread/src/odd-spread-profile/OddSpreadProfile.vue"
           ),
         meta: {
           title: "我们是一个什么样的平台",
@@ -48,7 +51,9 @@ const constantRoutes = [
         path: "/school/style",
         name: "SchoolStyle",
         component: () =>
-          import("@/views/school/src/schoolStyle/schoolStyle.vue"),
+          import(
+            /* webpackChunkName: "school" */ "@/views/school/src/schoolStyle/schoolStyle.vue"
+          ),
         meta: {
           title: "回忆校园",
           isLogin: false,
@@ -66,7 +71,10 @@ const constantRoutes = [
       {
         path: "/air-fly/home",
         name: "AirFlyHome",
-        component: () => import("@/views/air-fly/src/home/Home.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "air-fly" */ "@/views/air-fly/src/home/Home.vue"
+          ),
         meta: {
           title: "首页",
           isLogin: false,
@@ -75,7 +83,10 @@ const constantRoutes = [
       {
         path: "/air-fly/profile",
         name: "AriFlyProfile",
-        component: () => import("@/views/air-fly/src/profile/Profile.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "air-fly" */ "@/views/air-fly/src/profile/Profile.vue"
+          ),
         meta: {
           title: "介绍",
           isLogin: false,
@@ -93,7 +104,10 @@ const constantRoutes = [
       {
         path: "/coffee/home",
         name: "CoffeeHome",
-        component: () => import("@/views/coffee/src/home/Home.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "coffee" */ "@/views/coffee/src/home/Home.vue"
+          ),
         meta: {
           title: "首页",
           isLogin: false,
@@ -102,7 +116,10 @@ const constantRoutes = [
       {
         path: "/coffee/profile",
         name: "CoffeeProfile",
-        component: () => import("@/views/coffee/src/order/Order.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "coffee" */ "@/views/coffee/src/order/Order.vue"
+          ),
         meta: {
           title: "介绍",
           isLogin: false,
@@ -120,7 +137,10 @@ const constantRoutes = [
       {
         path: "/bank-me/home",
         name: "BankMeHome",
-        component: () => import("@/views/bank-me/src/home/Home.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "bank-me" */ "@/views/bank-me/src/home/Home.vue"
+          ),
         meta: {
           title: "首页",
           isLogin: false,
@@ -130,7 +150,9 @@ const constantRoutes = [
         path: "/bank-me/introduction",
         name: "BankMeIntroduction",
         component: () =>
-          import("@/views/bank-me/src/introduction/Introduction.vue"),
+          import(
+            /* webpackChunkName: "bank-me" */ "@/views/bank-me/src/introduction/Introduction.vue"
+          ),
         meta: {
           title: "介绍",
           isLogin: false,
@@ -139,7 +161,10 @@ const constantRoutes = [
       {
         path: "/bank-me/privacy",
         name: "BankMePrivacy",
-        component: () => import("@/views/bank-me/src/privacy/Privacy.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "bank-me" */ "@/views/bank-me/src/privacy/Privacy.vue"
+          ),
         meta: {
           title: "隐私通知",
           isLogin: false,
@@ -148,7 +173,10 @@ const constantRoutes = [
       {
         path: "/bank-me/login",
         name: "BankMePrivacy",
-        component: () => import("@/views/bank-me/src/login/Login.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "bank-me" */ "@/views/bank-me/src/login/Login.vue"
+          ),
         meta: {
           title: "登录",
           isLogin: false,
@@ -157,7 +185,10 @@ const constantRoutes = [
       {
         path: "/bank-me/register",
         name: "BankMePrivacy",
-        component: () => import("@/views/bank-me/src/register/Register.vue"),
+        component: () =>
+          import(
+            /* webpackChunkName: "bank-me" */ "@/views/bank-me/src/register/Register.vue"
+          ),
         meta: {
           title: "注册",
           isLogin: false,
